@@ -1,5 +1,5 @@
 export const CONSTANTS = {
-  apiBaseUrl: 'http://localhost:8080',
+  apiBaseUrl: 'https://backend-fmukona.onrender.com',
 }
 
 export class AuthService {

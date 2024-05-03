@@ -34,7 +34,7 @@ const renderBasket = ({ flower, deliveryDate, recipient, costOverview, isAuthed 
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:8080/orders', {
+      const response = await fetch('https://backend-fmukona.onrender.com/orders', {
         method: 'POST',
         body: JSON.stringify({
           items: [
