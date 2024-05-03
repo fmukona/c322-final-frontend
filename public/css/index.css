@@ -1,0 +1,90 @@
+
+/* Section: Hero */
+
+main section.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 400px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+main section.hero > .content {
+	grid-column: span 3 / span 3;
+  padding: 40px;
+  font-size: 24px;
+}
+
+main section.hero .content-image {
+  grid-column: span 2 / span 2;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section: Products */
+
+main section.products {
+  padding-bottom: 75px;
+}
+main section.products .controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 20px 0px;
+  text-transform: uppercase;
+}
+main section.products .controls > div {
+  display: flex;
+  align-items: center;
+}
+main section.products .controls > div > * + * {
+  margin-left: 10px;
+}
+
+main section.products .controls select {
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  border: 0;
+}
+
+main section.products .products-listings {
+  display: flex;
+}
+
+main section.products .products-listings ul {
+  list-style: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 20px;
+}
+main section.products .products-listings li {
+  box-sizing: border-box;
+}
+main section.products .products-listings .product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-secondary-color);
+  text-decoration: none;
+  color: black;
+}
+main section.products .products-listings .product-card .product-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section.products .products-listings .product-card .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main section.products .products-listings .product-card .product-content {
+  padding: 10px;
+  text-align: center;
+}

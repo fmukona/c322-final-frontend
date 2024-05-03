@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farai's Flowers | Online Store</title>
+    <link rel="stylesheet" href="./public/css/shared.css">
+    <link rel="stylesheet" href="./public/css/orders.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+	  <script type="module" src="./public/scripts/shared.js"></script>
+	  <script type="module" src="./public/scripts/basket.js"></script>
+	  <script type="module" src="./public/scripts/pages/orders.js"></script>
+    <header>
+      <div class="left">
+        <a href="/">
+          <div class="logo">
+            <span>FF</span>
+          </div>
+          <h1>Farai's Flowers</h1>
+        </a>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="./orders.html">Track Order</a></li>
+          <li><a href="#">Help</a></li>
+          <li>
+            <a href="#" id="basket-status">
+              <i class="fa-solid fa-basket-shopping fa-lg"></i>
+              <span id="basket-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="orders">
+        <h1>My Orders</h1>
+        <table class="orders-list">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Flower</th>
+              <th>Total Cost</th>
+              <th>Recipient</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="orders-rows">
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
+

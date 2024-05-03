@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farai's Flowers | Online Store</title>
+    <link rel="stylesheet" href="./public/css/shared.css">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+	  <!-- <script src="./public/scripts/basket.js"></script> -->
+	  <script type="module" src="./public/scripts/shared.js"></script>
+	  <script type="module" src="./public/scripts/basket.js"></script>
+	  <script type="module" src="./public/scripts/pages/index.js"></script>
+    <header>
+      <div class="left">
+        <a href="/">
+          <div class="logo">
+            <span>FF</span>
+          </div>
+          <h1>Farai's Flowers</h1>
+        </a>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="./orders.html">Track Order</a></li>
+          <li><a href="#">Help</a></li>
+          <li>
+            <a href="#" id="basket-status">
+              <i class="fa-solid fa-basket-shopping fa-lg"></i>
+              <span id="basket-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="content">
+          <h1>Send Her Blooms</h1>  
+          <p>Make her day with a bouquet of fresh flowers</p>
+        </div>
+        <div class="content-image">
+          <img src="./public/images/flowers/1.jpg" alt="Flowers">
+        </div>
+      </section>
+      <section class="products">
+        <div class="controls">
+          <div>
+            <p>Filters:</p>
+            <div>
+              <select name="type" id="flower-filter-type">
+                <option disabled selected value>Flower type</option>
+                <option value="MIXED">Mixed</option>
+                <option value="ROSE">Roses</option>
+                <option value="LILY">Lilies</option>
+                <option value="TULIP">Tulips</option>
+                <option value="DAISY">Daisies</option>
+              </select>
+              <select name="occasion" id="flower-filter-occasion">
+                <option disabled selected value>Occasion</option>
+                <option value="MOTHERS_DAY">Mother's Day</option>
+                <option value="BIRTHDAY">Birthday</option>
+                <option value="THANK_YOU">Thank you</option>
+              </select>
+              <select name="color" id="flower-filter-color">
+                <option disabled selected value>Color</option>
+                <option value="MIXED">Mixed</option>
+                <option value="RED">Red</option>
+                <option value="YELLOW">Yellow</option>
+                <option value="GREEN">Green</option>
+                <option value="ORANGE">Orange</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <p>Sort By:</p>
+            <select name="sort-by" id="flower-sort">
+              <option disabled selected value>Sort by</option>
+              <option value="price-lth">Price: Low to high</option>
+              <option value="price-htl">Price: High to low</option>
+            </select>
+          </div>
+        </div>
+        <div class="products-listings">
+          <ul id="products">
+            <!-- <li> -->
+            <!--   <div class="product-card"> -->
+            <!--     <div class="product-image"> -->
+            <!--       <img src="./public/images/flower1.jpg" /> -->
+            <!--     </div> -->
+            <!--     <div class="product-content"> -->
+            <!--       <h4 class="title">Boquet</h4> -->
+            <!--       <p class="price">$20</p> -->
+            <!--     </div> -->
+            <!--   </div> -->
+            <!-- </li> -->
+            <!--   <div class="product-card"> -->
+            <!--     <div class="product-image"> -->
+            <!--       <img src="./public/images/flower2.jpg" /> -->
+            <!--     </div> -->
+            <!--     <div class="product-content"> -->
+            <!--       <h4 class="title">Boquet</h4> -->
+            <!--       <p class="price">$20</p> -->
+            <!--     </div> -->
+            <!--   </div> -->
+            <!-- <li> -->
+            <!--   <div class="product-card"> -->
+            <!--     <div class="product-image"> -->
+            <!--       <img src="./public/images/flower3.jpg" /> -->
+            <!--     </div> -->
+            <!--     <div class="product-content"> -->
+            <!--       <h4 class="title">Boquet</h4> -->
+            <!--       <p class="price">$20</p> -->
+            <!--     </div> -->
+            <!--   </div> -->
+            <!-- </li> -->
+            <!-- <li> -->
+            <!--   <div class="product-card"> -->
+            <!--     <div class="product-image"> -->
+            <!--       <img src="./public/images/flower4.jpg" /> -->
+            <!--     </div> -->
+            <!--     <div class="product-content"> -->
+            <!--       <h4 class="title">Boquet</h4> -->
+            <!--       <p class="price">$20</p> -->
+            <!--     </div> -->
+            <!--   </div> -->
+            <!-- </li> -->
+            <!-- <li> -->
+            <!--   <div class="product-card"> -->
+            <!--     <div class="product-image"> -->
+            <!--       <img src="./public/images/flower1.jpg" /> -->
+            <!--     </div> -->
+            <!--     <div class="product-content"> -->
+            <!--       <h4 class="title">Boquet</h4> -->
+            <!--       <p class="price">$20</p> -->
+            <!--     </div> -->
+            <!--   </div> -->
+            <!-- </li> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

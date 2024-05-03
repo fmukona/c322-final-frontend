@@ -1,0 +1,23 @@
+section.orders {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.orders table.orders-list {
+  width: 100%;
+}
+
+section.orders table.orders-list th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+}
+
+section.orders table.orders-list td {
+  padding: 10px;
+  border-bottom: 1px solid var(--bg-secondary-color);
+}
+section.orders table.orders-list tbody tr {
+  background-color: var(--bg-secondary-color);
+}
